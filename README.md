@@ -1,9 +1,9 @@
-# chapter1Template
+# paper1
 
 This repository is both a standalone paper as well as a thesis chapter. 
-The main document is `chapter1.tex` that includes relevant content
+The main document is `content1.tex` that includes relevant content
 for the paper and the thesis.
-The document `paper1.tex` is a wrapper for `chapter1.tex` that creates the 
+The document `paper1.tex` is a wrapper for `content1.tex` that creates the 
 stand-alone paper. 
 Both files may include additional tex files, 
 but these tex files should be placed in the main directory for ease converting
