@@ -1,20 +1,19 @@
 \documentclass{article}
 \usepackage{graphicx}
-\usepackage{etoolbox}
+\usepackage{comment}
 
 \graphicspath{{figures_tables/}}
 
 \title{Paper 1 title}
 \author{Paper 1 authors}
 
+\newenvironment{thesis}{}{}
+\excludecomment{thesis} % will exclude material that is only for the thesis
+
 \begin{document}
 
-%Turn on/off the thesis toogle
-\newtoggle{thesis}
-\togglefalse{thesis}
-
 \maketitle
-\include{chapter1}
+\include{content1}
 
 \end{document}
 

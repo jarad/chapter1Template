@@ -2,7 +2,11 @@
 \section{Introduction}
 Put chapter 1 content here.
 
-\iftoggle{thesis}{Wrap sections you only want for the thesis using the etoolbox package.  Here, thesis is the name of the toggle.}
+\begin{thesis}
+Wrap content you only want for the thesis using the thesis environment.  
+This content will be included in the thesis, 
+but not in the submitted/published version of the manuscript.
+\end{thesis}
 
 \section{Lets make a table} 
 \input{figures_tables/tab1} 
