@@ -8,5 +8,7 @@
 *.aux
 *.log
 *.synctex.gz
+*.bbl
+*.blg
 
 paper1.pdf
