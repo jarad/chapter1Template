@@ -1,19 +1,43 @@
 \documentclass{article}
+
+% This is for figures.
 \usepackage{graphicx}
+
+% This is for comments/verbatim content.
 \usepackage{comment}
 
+% This is for references.
+\usepackage{natbib} \bibpunct[,]{(}{)}{;}{a}{,}{,}
+
+% This is for hyperlinks.
+\usepackage{hyperref}
+
+% Rather than including the relative path for each figure, you can set a path
+% to be searched here. Make sure all figures have distinctive names otherwise
+% you may end up having different plots than you were expecting.
 \graphicspath{{figures_tables/}}
+
 
 \title{Paper 1 title}
 \author{Paper 1 authors}
 
+
+% Often more content will exist in your thesis than ends up in the final 
+% manuscript. This environment will allow you to include content in the thesis
+% that is not included in the manuscript.
 \newenvironment{thesis}{}{}
 \excludecomment{thesis} % will exclude material that is only for the thesis
 
+
 \begin{document}
+
 
 \maketitle
 \include{content1}
+
+% For references
+\bibliography{references}    % file with .bib extension containing your references
+\bibliographystyle{plainnat} % style of bibliography
 
 \end{document}
 

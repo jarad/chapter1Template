@@ -11,12 +11,27 @@ but not in the submitted/published version of the manuscript.
 \section{Lets make a table} 
 \input{figures_tables/tab1} 
 
-\section{Lets share an historic moment}
+\section{Figures}
+
+\subsection{Lets share an historic moment}
 
 Figure \ref{history} is so amazing  that the rest is indeed obvious.
-
 \begin{figure}[h!tb] \centering
 \includegraphics{history}
 \caption{Suarez save the day !}
 \label{history}
 \end{figure}
+Captions go beneath figures.
+
+\section{References}
+
+For references, use BibTeX (\url{http://www.bibtex.org/}).
+This means you will want a file that includes your references, 
+e.g. references.bib, and you will reference them using a set of BibTeX commands.
+
+\cite{niemi2015empirical} constructed a hierachical model and an empirical 
+Bayes analysis for RNA-seq data. 
+An analysis of RNA-seq data showed large number of genes exhibiting a pattern
+of hybrid vigor \citep{niemi2015empirical}.
+\citeauthor{niemi2015empirical} can be extended for many different experimental
+designs.
